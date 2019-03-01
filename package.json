@@ -1,0 +1,31 @@
+{
+  "name": "Fakebook-React-Native",
+  "version": "1.0.0",
+  "description": "Fakebook Users App",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client1": "npm start --prefix client1",
+    "dev": "concurrently \"npm run server\" \"expo start client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client1 && npm run build --prefix client1"
+  },
+  "author": "Recro",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.4.12",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
