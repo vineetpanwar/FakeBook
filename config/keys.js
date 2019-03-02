@@ -1,5 +1,5 @@
 module.exports = {
-  mongoURI: "mongodb://localhost:27017/Fakebook",
+  mongoURI: "mongodb://endUser:123abc@ds157735.mlab.com:57735/fakebook",
   secretOrKey: "SECRET_KEY"
 };
 
